@@ -9,10 +9,7 @@ El material consta de:
 * `LinkedDataServer`: Servidor Linked Data, incluyendo Triple Store, para "simular" una situación real de publicación de datos FAIR/Linked Data.
 * `papers`: artículos científicos sobre FAIR.
 
-https://guides.github.com/activities/citable-code/
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4302267.svg)](https://doi.org/10.5281/zenodo.4302267)
 
-[![DOI](https://zenodo.org/badge/xxx.svg)](https://zenodo.org/badge/latestdoi/xxx)
-
-Licencia: [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
