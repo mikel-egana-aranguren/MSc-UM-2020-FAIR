@@ -2,7 +2,7 @@
 
 ## About
 
-This is a standalone, hassle-free Linked Data server. It is meant for teaching purposes, so do not use in production.
+This is a standalone, hassle-free [Linked Data](https://www.w3.org/standards/semanticweb/data) server. It is meant for teaching purposes, so do not use in production.
 
 The bundle comprises:
 
