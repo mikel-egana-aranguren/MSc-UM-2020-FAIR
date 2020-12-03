@@ -1,0 +1,5 @@
+{
+    "baseConfig": "trifid:config-sparql.json",
+    "sparqlEndpointUrl": "http://localhost:9999/blazegraph/namespace/kb/sparql",
+    "datasetBaseUrl": "http://um.com/"
+}
