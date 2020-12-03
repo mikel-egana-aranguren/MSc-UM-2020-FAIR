@@ -16,7 +16,7 @@ This has been tested in Ubuntu 20.04 LTS but it should probably work in other se
 Dependencies:
 
 * Java. It has been tested with `OpenJDK Runtime Environment (build 1.8.0_275-8u275-b01-0ubuntu1~20.04-b01)`. Install Java with your favourite method.
-* Node JS. It has been tested with `nodejs (10.19.0~dfsg-3ubuntu1)`. To install Node JS in ubuntu simply run `apt-get update && apt-get install nodejs`.
+* Node JS. It has been tested with `nodejs (10.19.0~dfsg-3ubuntu1)`. To install Node JS in ubuntu simply run `apt-get update && apt-get install nodejs` (NOTE: in some systems the [nvm installation](https://www.digitalocean.com/community/tutorials/como-instalar-node-js-en-ubuntu-18-04-es) works better).
 
 Installation:
 
@@ -31,6 +31,19 @@ There is no need for further configuration, since the specific configuration for
     "baseConfig": "trifid:config-sparql.json",
     "sparqlEndpointUrl": "http://localhost:9999/blazegraph/namespace/kb/sparql",
     "datasetBaseUrl": "http://um.com/"
+}
+```
+
+For example to change the port in which trifid will listen, add the following:
+
+```json
+{
+    "baseConfig": "trifid:config-sparql.json",
+    "sparqlEndpointUrl": "http://localhost:9999/blazegraph/namespace/kb/sparql",
+    "datasetBaseUrl": "http://um.com/", 
+    "listener": {
+      "port": 8080
+    }
 }
 ```
 
