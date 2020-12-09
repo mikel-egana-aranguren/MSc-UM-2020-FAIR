@@ -27,6 +27,7 @@ Hay dos grandes areas para trabajar FAIR:
 * Tecnica: Linked Data etc
 * Contenido: ontologias, metadatos, etc
 
-FAIRificar desde un CSV
+FAIRificar desde un CSV:
+Crear URIs, anotar con ontologias (elegir!), convertir a RDF, enlazar, añadir metadatos, añadir licencia, 
 
 LD ayuda mucho a FAIRificar, pero no es suficiente

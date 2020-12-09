@@ -38,8 +38,8 @@
         <ol>
             <li>Introducción</li>
             <li>Principios FAIR</li>
+            <li>Cómo convertir datos a FAIR (FAIRificar)</li>
             <li>Métricas FAIR</li>
-            <li>Implementaciones FAIR</li>
             <li>Recursos sobre FAIR</li>
             
         </ol>
@@ -128,6 +128,7 @@
 
     <section class="slide">
         <h2>Findable</h2>
+        <p>Easy to find by both humans and computer systems and based on mandatory description of the metadata that allow the discovery of interesting datasets</p>
     </section>
 
     <section class="slide">
@@ -135,12 +136,10 @@
         <p>Globally unique: dominios (€), registros, algoritmos (e.g. UUID), etc.</p>
         <p>Persistent: infraestrtuctura propia (€€€), registros, etc.</p>
     </section>
+
     <section class="slide">
         <h2>Persistent</h2>
         <p>Infraestructura propia: por ejemplo <a href="https://www.w3.org/Consortium/Persistence">W3C URI Persistence Policy</a></p>
-
-        https://mikel-egana-aranguren.github.io/2017/01/27/Useful-docs-on-URIs,-httpRange-14,-conneg,-etc/html
-
         <p>Registros:  http://identifiers.org, http://www.doi.org, https://orcid.org/</p>
     </section>
 
@@ -156,12 +155,30 @@
             McMurry JA, Juty N, Blomberg N, Burdett T, Conlin T, et al. (2017) Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data. PLOS Biology 15(6): e2001414. https://doi.org/10.1371/journal.pbio.2001414</p>
         <p><a href="../papers/journal.pbio.2001414.pdf">journal.pbio.2001414.pdf</a></p>
     </section>
-    
 
+    <section class="slide">
+        <h2>F1. Ejemplos</h2>
+        <ul>
+            <li>https://orcid.org/0000-0001-8888-635X</li>
+            <li><ul><b>doi</b></ul>:10.4121/uuid:5146dd06-98e4-426c-9ae5-dc8fa65c549f</li>
+            <li>http://www.uniprot.org/uniprot/P98161</li>
+            <li>http://omim.org/entry/173900</li>
+        </ul>
+    </section>
 
+    <section class="slide">
+        <h2>F1. Nuestro ejemplo hipotético</h2>
+        <p>Nuestro laboratorio de la UM ha descubierto un gen nuevo, PKD1</p>
+        <p>La UM tiene un repositorio persistente de datos</p>
+        <p>URI: https://um.es/data/GenPKD1</p>
+    </section>
 
     <section class="slide">
         <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
+        <p>Anotar los datos con metadatos de la manera más detallada posible</p>
+        <p>Usar ontologías para hacerlo:</p> 
+        <p>Metadatos de contenido: Linked Open Vocabularies, OBO Foundry, BioPortal, ...</p>
+        <p>Metadatos técnicos: DCAT, VoID, Data Cube, EFO, ...</p>
 
     </section>
 
@@ -171,12 +188,12 @@
     </section>
 
     <section class="slide">
-        <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>
-            
+        <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>   
     </section>
 
     <section class="slide">
         <h2>Accesible</h2>
+        <p>Stored for long term such that they can be easily accessed and/or downloaded with well-defined license and access conditions (Open Access when possible), whether at the level of metadata, or at the level of the actual data content</p>
     </section>
 
     <section class="slide">
@@ -198,6 +215,7 @@
 
     <section class="slide">
         <h2>Interoperable</h2>
+        <p>Ready to be combined with other datasets by humans as well as computer systems</p>
     </section>
 
     <section class="slide">
@@ -214,6 +232,7 @@
 
     <section class="slide">
         <h2>Reusable</h2>
+        <p>Ready to be used for future research and to be processed further using computational methods</p>
     </section>
 
     <section class="slide">
