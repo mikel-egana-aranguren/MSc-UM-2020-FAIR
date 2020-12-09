@@ -1,5 +1,7 @@
 # Posibles ideas
 
+Intro: explicar bien todo lo que tienen en el repo GitHub: papers etc
+
 Metricas FAIR >> Sistema Linked Data >> Metricas FAIR
 
 Linked Data:
@@ -18,3 +20,13 @@ BioSchemas
 http://ma-graph.org/
 
 Persistent identifiers: W3C contract
+
+Freely implementable protocol: poner lista de protocolos y preguntar
+
+Hay dos grandes areas para trabajar FAIR:
+* Tecnica: Linked Data etc
+* Contenido: ontologias, metadatos, etc
+
+FAIRificar desde un CSV
+
+LD ayuda mucho a FAIRificar, pero no es suficiente
