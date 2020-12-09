@@ -1,6 +1,9 @@
 # Posibles ideas
 
-Intro: explicar bien todo lo que tienen en el repo GitHub: papers etc
+## Intro 
+
+* explicar bien todo lo que tienen en el repo GitHub: papers etc
+* vamos a dar ejemplos concretos de implementacion, pero recordar siempre que FAIR no es obre implementacion!
 
 Metricas FAIR >> Sistema Linked Data >> Metricas FAIR
 
