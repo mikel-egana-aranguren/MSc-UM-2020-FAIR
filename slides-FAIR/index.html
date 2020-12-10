@@ -38,7 +38,7 @@
         <ol>
             <li>Introducción</li>
             <li>Principios FAIR</li>
-            <li>Cómo convertir datos a FAIR (FAIRificar)</li>
+            <li>Publicar datos FAIR</li>
             <li>Métricas FAIR</li>
             <li>Recursos sobre FAIR</li>
             
@@ -128,7 +128,7 @@
 
     <section class="slide">
         <h2>Findable</h2>
-        <p>Easy to find by both humans and computer systems and based on mandatory description of the metadata that allow the discovery of interesting datasets</p>
+        <p>Data should be identified using globally unique, resolvable, and persistent identifiers, and should include machine-actionable contextual information that can be indexed to support human and machine discovery of that data</p>
     </section>
 
     <section class="slide">
@@ -140,7 +140,7 @@
     <section class="slide">
         <h2>Persistent</h2>
         <p>Infraestructura propia: por ejemplo <a href="https://www.w3.org/Consortium/Persistence">W3C URI Persistence Policy</a></p>
-        <p>Registros:  http://identifiers.org, http://www.doi.org, https://orcid.org/</p>
+        <p>Registros: http://identifiers.org, http://www.doi.org, https://orcid.org/</p>
     </section>
 
     <section class="slide">
@@ -151,8 +151,7 @@
     </section>
 
     <section class="slide">
-        <p>Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data
-            McMurry JA, Juty N, Blomberg N, Burdett T, Conlin T, et al. (2017) Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data. PLOS Biology 15(6): e2001414. https://doi.org/10.1371/journal.pbio.2001414</p>
+        <p>Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data McMurry JA, Juty N, Blomberg N, Burdett T, Conlin T, et al. (2017) Identifiers for the 21st century: How to design, provision, and reuse persistent identifiers to maximize utility and impact of life science data. PLOS Biology 15(6): e2001414. https://doi.org/10.1371/journal.pbio.2001414</p>
         <p><a href="../papers/journal.pbio.2001414.pdf">journal.pbio.2001414.pdf</a></p>
     </section>
 
@@ -168,15 +167,16 @@
 
     <section class="slide">
         <h2>F1. Nuestro ejemplo hipotético</h2>
-        <p>Nuestro laboratorio de la UM ha descubierto un gen nuevo, PKD1, que esta implicado en enfermaedades renales</p>
+        <p>Nuestro laboratorio de la UM ha descubierto un gen nuevo, PKD1, que esta implicado en enfermedades renales de los humanos</p>
         <p>La UM tiene un repositorio persistente de datos</p>
-        <p>URI: https://um.es/data/GenPKD1</p>
+        <p>URI del dataset: https://um.es/dataset/genes</p>
+        <p>URI de un gen: https://um.es/data/GenPKD1</p>
     </section>
 
     <section class="slide">
         <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
         <p>Anadir metadatos con el maximo de detalles posible</p> 
-        <p>Metadatos de contenido: a que especie pertenece GenPKD1, etc.</p>
+        <p>Metadatos de contenido: a que especies pertenecen los genes, etc.</p>
         <p>Metadatos técnicos: la tematica de los datos, cuando se generaron, como, etc.</p>
     </section>
 
@@ -194,25 +194,31 @@
 
     <section class="slide">
         <h2>F3. metadata clearly and explicitly include the identifier of the data it describes</h2>
-          
+        <p>"https://um.es/dataset/genes was generated on 2020-12-10T13:00:07"</p> 
+        <p>"https://um.es/dataset/genes is about genes"</p>
+        <p>"https://um.es/dataset/genes relates to humans"</p>
+        <p>etc.</p>
     </section>
 
     <section class="slide">
-        <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>   
+        <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>  
+        <p>Repositorios generales: Zenodo, DataDryad, Dataverse, ...</p> 
+        <p>Repositorios especificos: UniProt, ...</p>
+        <p>Indexadores: Google indexa de manera básica (aunque cada vez menos, con schema; bioschema), gracias a nuestros metadatos lo podria hacer mejor</p>
     </section>
 
     <section class="slide">
         <h2>Accesible</h2>
-        <p>Stored for long term such that they can be easily accessed and/or downloaded with well-defined license and access conditions (Open Access when possible), whether at the level of metadata, or at the level of the actual data content</p>
+        <p>Identified data should be accessible, optimally by both humans and machines, using a clearly-defined protocol and, if necessary, with clearly-defined rules for authorization/authentication</p>
     </section>
 
     <section class="slide">
         <h2>A1. (meta)data are retrievable by their identifier using a standardized communications protocol</h2>
+
     </section>
 
     <section class="slide">
         <h2>A1.1 the protocol is open, free, and universally implementable</h2>
-            <p>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</p>
     </section>
 
     <section class="slide">
@@ -225,7 +231,7 @@
 
     <section class="slide">
         <h2>Interoperable</h2>
-        <p>Ready to be combined with other datasets by humans as well as computer systems</p>
+        <p>Data becomes interoperable when it is machine-actionable, using shared vocabularies and/or ontologies, inside of a syntactically and semantically machine-accessible format</p>
     </section>
 
     <section class="slide">
@@ -242,7 +248,7 @@
 
     <section class="slide">
         <h2>Reusable</h2>
-        <p>Ready to be used for future research and to be processed further using computational methods</p>
+        <p>Reusable data will first be compliant with the F, A, and I principles, but further, will be sufficiently well-described with, for example, contextual information, so it can be accurately linked or integrated, like-with-like, with other data sources. Moreover, there should be sufficiently rich provenance information so reused data can be properly cited</p>
     </section>
 
     <section class="slide">
@@ -262,6 +268,12 @@
 
     <section class="slide">
         <h2>R1.3. (meta)data meet domain-relevant community standards</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Publicar datos FAIR</h2>
+        <p>Linked Data es una manera de publicar datos que se acercan a FAIR</p>
+
     </section>
 
     <section class="slide">
