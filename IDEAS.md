@@ -22,6 +22,10 @@ FAIRificar (https://www.go-fair.org/fair-principles/fairification-process/): emp
 
 Meter metadatos con named graphs (estandar W3C named graphs), foaf:primaryTopic
 
+Meter tambien el archivo original CSV en servidor web, y enlace con DCAT, como en https://peerj.com/articles/cs-110/#, hacer un diagrama que simplifique todo
+
+DCAT, PROV, VOID
+
 Trifid: Conneg diferente pero da igual, lo importante es que es para maquinas
 
 Como he deducido la URL http://localhost:9999/blazegraph/namespace/kb/sparql? Mirando el network en firefox (Aunque lo mejor seria usar la documentacion). Si hago un CURL, me da contenido siguiendo SPARQL Service Description (http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321): es semantico, un agente lo puede usar! Comentar tambien SPARQL protocol

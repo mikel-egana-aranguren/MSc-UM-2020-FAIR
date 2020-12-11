@@ -127,6 +127,11 @@
     </section>
 
     <section class="slide">
+        <h2>Principios y ejemplos</h2>
+        <p>No confundir las tecnologias para implementar principios FAIR con los principios FAIR</p>
+    </section>
+
+    <section class="slide">
         <h2>Findable</h2>
         <p>Data should be identified using globally unique, resolvable, and persistent identifiers, and should include machine-actionable contextual information that can be indexed to support human and machine discovery of that data</p>
     </section>
@@ -187,12 +192,6 @@
     </section>
 
     <section class="slide">
-        <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
-        <p>Taxon, EFO</p>
-        <p>DCAT</p>
-    </section>
-
-    <section class="slide">
         <h2>F3. metadata clearly and explicitly include the identifier of the data it describes</h2>
         <p>"https://um.es/dataset/genes was generated on 2020-12-10T13:00:07"</p> 
         <p>"https://um.es/dataset/genes is about genes"</p>
@@ -202,9 +201,17 @@
 
     <section class="slide">
         <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>  
-        <p>Repositorios generales: Zenodo, DataDryad, Dataverse, ...</p> 
-        <p>Repositorios especificos: UniProt, ...</p>
-        <p>Indexadores: Google indexa de manera básica (aunque cada vez menos, con schema; bioschema), gracias a nuestros metadatos lo podria hacer mejor</p>
+        <p>Repositorios generales: Zenodo, DataDryad, Dataverse, etc.</p> 
+        <p>Repositorios especificos: UniProt, etc.</p>
+        <p>Indexadores como Google</p>
+    </section>
+
+    <section class="slide">
+        <h2>Indexacion</h2>  
+        <p>Google indexa de manera "básica" ...</p> 
+        <p>... pero cada vez menos, gracias a <a href="https://schema.org/">Schema</> (ontologia muy ligera para describir datos en la web)</p>
+        <p><a href="https://bioschemas.org/">Bioschemas</a> (?)</p>
+        <p>Hay que intentar publicar buenos metadatos para una indexacion adecuada (por Google o cualquier agente que <i>entienda</i> las ontologias que usamos)</p>
     </section>
 
     <section class="slide">
@@ -214,19 +221,26 @@
 
     <section class="slide">
         <h2>A1. (meta)data are retrievable by their identifier using a standardized communications protocol</h2>
-
+        <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
         <h2>A1.1 the protocol is open, free, and universally implementable</h2>
+        <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
         <h2>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</h2>
+        <p>Hacer explicitas las condiciones fisicas de acceso, para humanos y maquinas</p>
+        <p>Datos protegidos por propiedad intelectual o privacidad (ej. datos clinicos): no se publican los datos, pero si sus metadatos y sus condiciones de acceso</p>
+        <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
         <h2>A2. metadata are accessible, even when the data are no longer available</h2>
+        <p>Conservar datos es muy caro</p>
+        <p>Conservar metadatos es mucho mas barato</p>
+        <p>Si los datos ya no existen, deberiamos ser explicitos sobre ello, por ejemplo para evitar busquedas innecesarias</p>
     </section>
 
     <section class="slide">
@@ -236,14 +250,19 @@
 
     <section class="slide">
         <h2>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</h2>
+        <p>Las maquinas tambien tienen que <i>entender</i> los (meta)datos</p>
+        <p>Por ejemplo OWL (Web Ontology Language)</p>
     </section>
 
     <section class="slide">
         <h2>I2. (meta)data use vocabularies that follow FAIR principles</h2>
+        <p>Las ontologia usadas para describir los datos tambien se tienen que publicar como FAIR</p>
     </section>
 
     <section class="slide">
         <h2>I3. (meta)data include qualified references to other (meta)data</h2>
+        <p>Los (meta)datos son solo utiles cuando los integramos con otros datos</p>
+        <p>Enlaces explicitos a otros datos: part-of, catalyses, etc.</p>
     </section>
 
     <section class="slide">
@@ -259,20 +278,43 @@
     </section>
 
     <section class="slide">
+        <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
+            <p>F2 es para descubrir datos, R1 es para decidir si los datos son utiles</p>
+    </section>
+
+    <section class="slide">
+        <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
+        Describe the scope of your data: for what purpose was it generated/collected?
+        Mention any particularities or limitations about the data that other users should be aware of.
+        Specify the date of generation/collection of the data, the lab conditions, who prepared the data, the parameter settings, the name and version of the software used.
+        Is it raw or processed data?
+        Ensure that all variable names are explained or self-explanatory (i.e., defined in the research field’s controlled vocabulary).
+        Clearly specify and document the version of the archived and/or reused data.
+    </section>
+
+    <section class="slide">
         <h2>R1.1. (meta)data are released with a clear and accessible data usage license</h2>
+        <p>I es sobre interoperabilidad tecnica; R1.1 es sobre interoperabilidad legal</p>
+        <p>Los datos deben tener una licencia clara y explicita para humanos y maquinas</p>
+        <p>Creative Commons RDF</p>
     </section>
 
     <section class="slide">
         <h2>R1.2. (meta)data are associated with detailed provenance</h2>
+        <p>Como, quien, cuando, genero los datos?</p>
+        <p>PROV</p>
     </section>
 
     <section class="slide">
         <h2>R1.3. (meta)data meet domain-relevant community standards</h2>
+        <p>Respetar las buenas practicas, estandares, vocabularios de la comunidad cientifica que trabaja con esos datos</p>
+        <p>http://fged.org/projects/minseqe/</p>
     </section>
 
     <section class="slide">
         <h2>Publicar datos FAIR</h2>
-        <p>Linked Data es una manera de publicar datos que se acercan a FAIR</p>
+        <p>Hay muchas maneras de publicar datos FAIR</p>
+        <p>Implementacion ejemplo: https://peerj.com/articles/cs-110/#</p>
 
     </section>
 
