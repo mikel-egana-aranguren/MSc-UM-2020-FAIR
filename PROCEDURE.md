@@ -33,3 +33,9 @@ http://localhost:8080/data/LDD012546
 
 
 Archivo ttl con metadatos DCAT
+
+service apache2 restart
+
+cp GenesUM.csv /var/www/html/
+
+conneg agente contra DCAT
