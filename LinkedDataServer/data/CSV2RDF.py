@@ -30,4 +30,6 @@ for row in input_file:
 	# TODO: Logica humano/persona
 	output_graph.add((URIRef(base_uri + row['Id']), URIRef(organism), URIRef(base_uri +row['Tx'])) )	
 
-output_graph.serialize(destination='GenesUM.ttl', format='ttl')
+output_graph.serialize(destination='GenesUM.nt', format='nt')
+
+

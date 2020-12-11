@@ -39,8 +39,8 @@ For example to change the port in which trifid will listen, add the following:
 ```json
 {
     "baseConfig": "trifid:config-sparql.json",
-    "sparqlEndpointUrl": "http://localhost:9999/blazegraph/namespace/kb/sparql",
-    "datasetBaseUrl": "http://um.com/", 
+    "sparqlEndpointUrl": "http://localhost:9999/blazegraph/namespace/um/sparql",
+    "datasetBaseUrl": "http://um.es/", 
     "listener": {
       "port": 8080
     }

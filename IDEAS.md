@@ -22,9 +22,11 @@ FAIRificar (https://www.go-fair.org/fair-principles/fairification-process/): emp
 
 Meter metadatos con named graphs (estandar W3C named graphs), foaf:primaryTopic
 
-Meter tambien el archivo original CSV en servidor web, y enlace con DCAT, como en https://peerj.com/articles/cs-110/#, hacer un diagrama que simplifique todo
+Meter tambien el archivo original CSV en servidor web (enlace simbolico), y enlace con DCAT, como en https://peerj.com/articles/cs-110/#, hacer un diagrama que simplifique todo
 
 DCAT, PROV, VOID
+
+SHACL + librdf de los datos
 
 Trifid: Conneg diferente pero da igual, lo importante es que es para maquinas
 

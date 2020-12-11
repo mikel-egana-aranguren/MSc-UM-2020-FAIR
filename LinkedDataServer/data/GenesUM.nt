@@ -1,0 +1,7 @@
+<https://um.es/data/LDD773322> <http://www.w3.org/2000/01/rdf-schema#label> "---"@en .
+<https://um.es/data/LDD012546> <http://www.w3.org/2000/01/rdf-schema#label> "PKD1"@en .
+<https://um.es/data/LDD999333> <http://purl.uniprot.org/core/organism> <https://um.es/data/Persona> .
+<https://um.es/data/LDD999333> <http://www.w3.org/2000/01/rdf-schema#label> "GGG2"@en .
+<https://um.es/data/LDD012546> <http://purl.uniprot.org/core/organism> <https://um.es/data/Humano> .
+<https://um.es/data/LDD773322> <http://purl.uniprot.org/core/organism> <https://um.es/data/Alien> .
+
