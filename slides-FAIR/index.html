@@ -41,7 +41,7 @@
             <li>Publicar datos FAIR</li>
             <li>Métricas FAIR</li>
             <li>Recursos sobre FAIR</li>
-            <li>Práctica Linked Data</li>
+            <li>Linked Data</li>
         </ol>
     </section>
 
@@ -330,10 +330,11 @@
     </section>
 
     <section class="slide">
-        <h2>Empresas</h2>
+        <h2>Empresas y centros</h2>
             <p><a href="http://www.fairdata.systems/">FAIR Data Systems</a></p>
             <p><a href="https://thehyve.nl/">The Hyve</a></p>
             <p><a href="https://eccenca.com/">Eccenca GmbH</a></p>
+            <p><a href="https://www.dtls.nl/">Dutch Tech Centre for Life Sciences (DTL)</a></p>
             
     </section>
 
@@ -343,8 +344,49 @@
     </section>
 
     <section class="slide">
-        <h2>Practica Linked Data</h2>
-        Explicar bien RDF Lib https://rdflib.dev/
+        <h2>Linked Data</h2>
+        <p><a href="https://www.go-fair.org/fair-principles/">GO FAIR</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Linked Data</h2>
+        <p>Linked Data ofrece una solución <i>técnica</i> para principios FAIR</p>
+        <p>Pero no suficiente: hay que producir contenido FAIR (Metadatos, Ontologías, URIs, etc.)</p>
+        <p><a href="../slides-Linked-Data/index.html#/10">slides-Linked-Data/index.html#/10</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Práctica</h2>
+        <p>"FAIRificar" un dataset de ejemplo</p>
+        <p>Proceso vertical: intentar cubrir todos los pasos técnicos, sin entrar en detalles de contenido</p>
+    </section>
+
+    <section class="slide">
+        <h2>A Generic Workflow for the Data FAIRification Process</h2>
+        <p><a href="../papers/566-AnnikaJacobsen-18.pdf">566-AnnikaJacobsen-18.pdf</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Datos de origen</h2>
+        <p><a href="../LinkedDataServer/data/GenesUM.csv">GenesUM.csv</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Conversión a RDF</h2>
+        <p><a href="../LinkedDataServer/data/CSV2RDF.py">CSV2RDF.py</a></p>
+        <p>Se basa en <a href="https://rdflib.dev/">RDFLib</a></p>
+        <p>Otras herramientas posibles: TARQL, OntoRefine, Open Refine, CMEM, Apache 23, etc.</p>
+    </section>
+
+    <section class="slide">
+        <h2>Anotar con ontologías</h2>
+        <p>LOV</p>
+    </section>
+
+    <section class="slide">
+        <h2>Enlazar</h2>
+        <p>A otras URIs</p>
+        <p>Manualmente, o con herramientas como SILK</p>
     </section>
 
    
