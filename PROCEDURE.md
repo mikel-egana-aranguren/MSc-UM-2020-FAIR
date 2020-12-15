@@ -11,7 +11,9 @@
 
  
 
-Convertir CSV a NT luego añadir un grafo, para añaidr metadatos!
+Añadir uri graph a archivo nt https://um.es/graph/genes
+
+Explicar Blazegrpah repo nuevo
 
 Consultas:
 
@@ -33,7 +35,6 @@ http://localhost:8080/data/LDD012546
 
 
 
-Archivo ttl con metadatos DCAT
 
 service apache2 restart
 

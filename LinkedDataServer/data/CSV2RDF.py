@@ -18,14 +18,14 @@ input_file = csv.DictReader(open("GenesUM.csv"))
 # Crear un objeto Grafo 
 output_graph = Graph()
 
-# URIs base comunes
+# URIs base comunes (FAIR: crear URIs como identificadores)
 base_uri = 'https://um.es/data/'
 
-# Objetos comunes
+# Objetos comunes (FAIR: reusar vocabularios y recursos)
 taxon_human = 'http://purl.uniprot.org/taxonomy/9606'
 sio_gene = 'http://semanticscience.org/resource/SIO_010035'
 
-# Propiedades comunes
+# Propiedades comunes (FAIR: reusar vocabularios)
 
 # UniProt Organism
 up_organism = 'http://purl.uniprot.org/core/organism' 
@@ -34,11 +34,11 @@ up_organism = 'http://purl.uniprot.org/core/organism'
 sio_has_unique_identifier = 'http://semanticscience.org/resource/SIO_000673'
 
 # Recorrer cada linea y convertir a triples RDF
-# FAIR: normalizamos los nombres de las columnas a predicados RDF con URI como SIO o UP
+# (FAIR: normalizar los nombres de las columnas a predicados RDF con URI como SIO o UP)
 
 for row in input_file:
 
-	# Recoger los datos
+	# Recoger los datos de la linea CSV
 
 	# URI sujeto: baseURI + columna Id
 	gen_uri = base_uri + row['Id']
@@ -46,7 +46,7 @@ for row in input_file:
 	# Columna Nombre
 	nombre = row['Nombre']
 
-	# Columna taxon ("Tx" nadie sabe lo que es! Lo normalizamos a una URI UniProt mediante el predicado up_organism)
+	# Columna taxon (FAIR: "Tx" nadie sabe lo que es! Lo normalizamos a una URI UniProt mediante el predicado up_organism)
 	taxon = row['Tx']
 
 	# Crear los triples
@@ -62,7 +62,7 @@ for row in input_file:
 	# Normalizar los datos
 	# gen->up:organism->taxon_human
 	if taxon != 'Alien': 
-		# gen->up_organism->taxon_human (Estamos creando un enlace Linked Data, usando taxon_human)
+		# gen->up_organism->taxon_human (FAIR: Estamos creando un enlace Linked Data, usando taxon_human)
 		output_graph.add((URIRef(gen_uri), URIRef(up_organism), URIRef(taxon_human)) )
 
 	# gen->rdf:type->sio_gene	

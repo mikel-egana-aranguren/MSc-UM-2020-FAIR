@@ -2,10 +2,14 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sd: <http://www.w3.org/ns/sparql-service-description#> 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX prov: <http://www.w3.org/ns/prov#>
 
 <https://um.es/dataset/UMGenesDataset> rdf:type dcat:Dataset ;
                                     rdfs:label "Genes de la Universidad de Murcia" ;
+                                    foaf:primaryTopic "Genes" ;
+                                    prov:wasDerivedFrom  <https://um.es/GeneticsExperiment26654> ;
                                     dcat:distribution <https://um.es/csv/genes> ;
                                     dcat:distribution <https://um.es/sparql/genes> ;
                                     sd:namedGraph <https://um.es/graph/genes> .
