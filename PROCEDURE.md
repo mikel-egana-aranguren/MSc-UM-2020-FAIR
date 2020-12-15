@@ -1,28 +1,6 @@
-# CSV to RDF
+# Procedure
 
-
-
- 
-
-
-
-
-
-
- 
-
-Añadir uri graph a archivo nt https://um.es/graph/genes
-
-Explicar Blazegrpah repo nuevo
-
-Consultas:
-
-```sparql
-SELECT DISTINCT ?g 
-WHERE {
-    GRAPH ?g {?s ?p ?o}
-}
-```
+Upload data and metadata
 
 ```sparql
 SELECT *
@@ -30,6 +8,9 @@ WHERE {
     GRAPH ?g {?s ?p ?o}
 }
 ```
+
+
+
 
 http://localhost:8080/data/LDD012546
 

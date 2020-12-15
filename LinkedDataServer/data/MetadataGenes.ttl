@@ -5,11 +5,13 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX cc: <http://creativecommons.org/ns#>
 
 <https://um.es/dataset/UMGenesDataset> rdf:type dcat:Dataset ;
                                     rdfs:label "Genes de la Universidad de Murcia" ;
                                     foaf:primaryTopic "Genes" ;
                                     prov:wasDerivedFrom  <https://um.es/GeneticsExperiment26654> ;
+                                    dct:License <http://creativecommons.org/licenses/MIT/> ;
                                     dcat:distribution <https://um.es/csv/genes> ;
                                     dcat:distribution <https://um.es/sparql/genes> ;
                                     sd:namedGraph <https://um.es/graph/genes> .
@@ -25,3 +27,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 
 <https://um.es/graph/genes> rdfs:label "Grafo RDF genes Murcia"@es ;
                             rdf:type sd:NamedGraph .
+
+<http://creativecommons.org/licenses/MIT/>
+  a cc:License ;
+  cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+  cc:licenseClass <http://creativecommons.org/license/software> ;
+  cc:requires cc:Notice ;
+  cc:legalcode <http://opensource.org/licenses/mit-license.php> .
