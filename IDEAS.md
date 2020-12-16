@@ -42,4 +42,6 @@ Seguir enlaces
 
 Fijarse que el agente, al tener un enlace explicito DCAT, es capaz de saber que hay un CSV al final del enlace!
 
-Si sobra tiempo, que empiecen a hacer trabajo:
+Estudiantes:
+* ejecutar ejemplo
+* trabajo propio
