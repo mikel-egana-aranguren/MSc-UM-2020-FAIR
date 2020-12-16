@@ -184,46 +184,46 @@
 
     <section class="slide">
         <h2>F1. Nuestro ejemplo hipotético</h2>
-        <p>Nuestro laboratorio de la UM ha descubierto un gen nuevo, PKD1, que esta implicado en enfermedades renales de los humanos</p>
+        <p>Nuestro laboratorio de la UM ha descubierto un gen nuevo, PKD1, implicado en enfermedades renales de los humanos</p>
         <p>La UM tiene un repositorio persistente de datos</p>
-        <p>URI del dataset: https://um.es/dataset/genes</p>
-        <p>URI de un gen: https://um.es/data/GenPKD1</p>
+        <p>URI del dataset: https://um.es/dataset/UMGenesDataset</p>
+        <p>URI de un gen: https://um.es/data/LDD773322</p>
     </section>
 
     <section class="slide">
         <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
-        <p>Anadir metadatos con el maximo de detalles posible</p> 
-        <p>Metadatos de contenido: a que especies pertenecen los genes, etc.</p>
-        <p>Metadatos técnicos: la tematica de los datos, cuando se generaron, como, etc.</p>
+        <p>Añadir metadatos lo más detallados posible</p> 
+        <p>Metadatos de contenido: a qué especies pertenecen los genes, la temática de los datos, etc.</p>
+        <p>Metadatos técnicos: cuándo se generaron los datos, como, por quién, etc.</p>
     </section>
 
     <section class="slide">
         <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
-        <p>Se usan ontologias (I1)</p> 
-        <p>Repositorios de ontologias: <a href="https://lov.linkeddata.es">Linked Open Vocabularies</a>, <a href="http://www.obofoundry.org/">OBO Foundry</a>, <a href="https://bioportal.bioontology.org/">BioPortal</a>, <a href="https://bioschemas.org/">BioSchemas</a>, etc.</p>
+        <p>Se usan ontologías (I1)</p> 
+        <p>Repositorios de ontologías: <a href="https://lov.linkeddata.es">Linked Open Vocabularies</a>, <a href="http://www.obofoundry.org/">OBO Foundry</a>, <a href="https://bioportal.bioontology.org/">BioPortal</a>, <a href="https://bioschemas.org/">BioSchemas</a>, etc.</p>
     </section>
 
     <section class="slide">
         <h2>F3. metadata clearly and explicitly include the identifier of the data it describes</h2>
-        <p>"https://um.es/dataset/genes was generated on 2020-12-10T13:00:07"</p> 
-        <p>"https://um.es/dataset/genes is about genes"</p>
-        <p>"https://um.es/dataset/genes relates to humans"</p>
+        <p>"https://um.es/dataset/UMGenesDataset was generated on 2020-12-10T13:00:07"</p> 
+        <p>"https://um.es/dataset/UMGenesDataset is about genes"</p>
+        <p>"https://um.es/dataset/UMGenesDataset relates to humans"</p>
         <p>etc.</p>
     </section>
 
     <section class="slide">
         <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>  
-        <p>Repositorios generales: Zenodo, DataDryad, Dataverse, etc.</p> 
-        <p>Repositorios especificos: UniProt, etc.</p>
+        <p>Repositorios generales: <a href="https://zenodo.org/">Zenodo</a>, <a href="https://datadryad.org/">DataDryad</a>, <a href="https://dataverse.org/">Dataverse</a> (<a href="https://dataverse.harvard.edu/">Harvard Dataverse</a>), etc.</p> 
+        <p>Repositorios temáticos: <a href="https://www.uniprot.org/">UniProt</a>, <a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a>, etc.</p>
         <p>Indexadores como Google</p>
     </section>
 
     <section class="slide">
         <h2>Indexacion</h2>  
         <p>Google indexa de manera "básica" ...</p> 
-        <p>... pero cada vez menos, gracias a <a href="https://schema.org/">Schema</> (ontologia muy ligera para describir datos en la web)</p>
+        <p>... pero cada vez menos, gracias a <a href="https://schema.org/">Schema</a> (Ontología muy ligera para describir datos en la web)</p>
         <p><a href="https://bioschemas.org/">Bioschemas</a> (?)</p>
-        <p>Hay que intentar publicar buenos metadatos para una indexacion adecuada (por Google o cualquier agente que <i>entienda</i> las ontologias que usamos)</p>
+        <p>Hay que intentar publicar buenos metadatos para una indexación adecuada (por Google o cualquier agente que <i>entienda</i> las ontologías que usamos)</p>
     </section>
 
     <section class="slide">
@@ -243,16 +243,16 @@
 
     <section class="slide">
         <h2>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</h2>
-        <p>Hacer explicitas las condiciones fisicas de acceso, para humanos y maquinas</p>
-        <p>Datos protegidos por propiedad intelectual o privacidad (ej. datos clinicos): no se publican los datos, pero si sus metadatos y sus condiciones de acceso</p>
+        <p>Hacer explícitas las condiciones físicas de acceso, para humanos y <b>máquinas</b></p>
+        <p>Datos protegidos por propiedad intelectual o privacidad (Ej. datos clínicos): no se publican los datos, sólo (algunos) metadatos y sus condiciones de acceso</p>
         <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
         <h2>A2. metadata are accessible, even when the data are no longer available</h2>
         <p>Conservar datos es muy caro</p>
-        <p>Conservar metadatos es mucho mas barato</p>
-        <p>Si los datos ya no existen, deberiamos ser explicitos sobre ello, por ejemplo para evitar busquedas innecesarias</p>
+        <p>Conservar metadatos es mucho más barato</p>
+        <p>Si los datos ya no existen, deberíamos ser explícitos sobre ello, por ejemplo para evitar búsquedas innecesarias</p>
     </section>
 
     <section class="slide">
@@ -262,19 +262,20 @@
 
     <section class="slide">
         <h2>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</h2>
-        <p>Las maquinas tambien tienen que <i>entender</i> los (meta)datos</p>
-        <p>Por ejemplo OWL (Web Ontology Language)</p>
+        <p>Las máquinas también tienen que <i>entender</i> los (meta)datos</p>
+        <p>Por ejemplo OWL (<a href="https://www.w3.org/TR/owl2-overview/">Web Ontology Language</a>)</p>
     </section>
 
     <section class="slide">
         <h2>I2. (meta)data use vocabularies that follow FAIR principles</h2>
-        <p>Las ontologia usadas para describir los datos tambien se tienen que publicar como FAIR</p>
+        <p>Las ontologías usadas para describir los datos también se tienen que publicar como FAIR</p>
     </section>
 
     <section class="slide">
         <h2>I3. (meta)data include qualified references to other (meta)data</h2>
-        <p>Los (meta)datos son solo utiles cuando los integramos con otros datos</p>
-        <p>Enlaces explicitos a otros datos: part-of, catalyses, etc.</p>
+        <p>Los (meta)datos son solo útiles cuando los integramos con otros datos</p>
+        <p>Enlaces explícitos a otros datos: "part-of", "catalyses", etc.</p>
+        <p>Las máquinas entienden el significado de esa relación</p>
     </section>
 
     <section class="slide">
@@ -291,7 +292,7 @@
 
     <section class="slide">
         <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
-            <p>F2 es para descubrir datos, R1 es para decidir si los datos son utiles</p>
+            <p>F2 es para descubrir datos, R1 es para decidir si los datos son útiles</p>
     </section>
 
     <section class="slide">
@@ -307,32 +308,33 @@
     <section class="slide">
         <h2>R1.1. (meta)data are released with a clear and accessible data usage license</h2>
         <p>I es sobre interoperabilidad tecnica; R1.1 es sobre interoperabilidad legal</p>
-        <p>Los datos deben tener una licencia clara y explicita para humanos y maquinas</p>
-        <p>Creative Commons RDF</p>
+        <p>Los datos deben tener una licencia clara y explícita para humanos y maquinas</p>
+        <p>Por ejemplo, <a href="https://github.com/creativecommons/cc.licenserdf">Creative Commons RDF</a></p>
     </section>
 
     <section class="slide">
         <h2>R1.2. (meta)data are associated with detailed provenance</h2>
-        <p>Como, quien, cuando, genero los datos?</p>
-        <p>PROV</p>
+        <p>¿Cómo, quién, cuándo, por qué generó los datos?</p>
+        <p><a href="https://www.w3.org/TR/prov-o/">PROV-O: The PROV Ontology</a></p>
     </section>
 
     <section class="slide">
         <h2>R1.3. (meta)data meet domain-relevant community standards</h2>
-        <p>Respetar las buenas practicas, estandares, vocabularios de la comunidad cientifica que trabaja con esos datos</p>
-        <p>http://fged.org/projects/minseqe/</p>
+        <p>Respetar las buenas prácticas, estándares, vocabularios etc. de la comunidad científica que trabaja con esos datos</p>
+        <p><a href="http://fged.org/projects/minseqe/">Minimum Information about a high-throughput SEQuencing Experiment</a></p>
     </section>
 
     <section class="slide">
         <h2>Publicar datos FAIR</h2>
-        <p>Hay muchas maneras de publicar datos FAIR</p>
-        <p>Implementacion ejemplo: https://peerj.com/articles/cs-110/#</p>
-
+        <p>Hay muchas maneras de publicar datos FAIR, por ejemplo</p>
+        <p><a href="../papers/peerj-cs-110.pdf">Interoperability and FAIRness through a novel combination of Web technologies</a></p>
+        <p><a href="../papers/fpls-07-00641.pdf">Publishing FAIR Data: An Exemplar Methodology Utilizing PHI-Base</a></p>
     </section>
 
     <section class="slide">
-        <h2>Métricas</h2>
-
+        <h2>Métricas FAIR</h2>
+        <p><a href="../papers/sdata2018118.pdf">A design framework and exemplar metrics for FAIRness</a></p>
+        <p><a href="https://github.com/FAIRMetrics/Metrics">https://github.com/FAIRMetrics/Metrics</a></p>
     </section>
 
     <section class="slide">
@@ -346,18 +348,13 @@
             <p><a href="http://www.fairdata.systems/">FAIR Data Systems</a></p>
             <p><a href="https://thehyve.nl/">The Hyve</a></p>
             <p><a href="https://eccenca.com/">Eccenca GmbH</a></p>
-            <p><a href="https://www.dtls.nl/">Dutch Tech Centre for Life Sciences (DTL)</a></p>
-            
+            <p><a href="https://www.dtls.nl/">Dutch Tech Centre for Life Sciences (DTL)</a></p>    
     </section>
 
     <section class="slide">
         <h2>Recursos sobre FAIR en internet</h2>
         <p><a href="https://www.go-fair.org/fair-principles/">GO FAIR</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Linked Data</h2>
-        <p><a href="https://www.go-fair.org/fair-principles/">GO FAIR</a></p>
+        <p><a href="https://fairsharing.org/">FAIR Sharing</a></p>
     </section>
 
     <section class="slide">
@@ -388,7 +385,7 @@
         <h2>Conversión a RDF</h2>
         <p><a href="../LinkedDataServer/data/CSV2RDF.py">CSV2RDF.py</a></p>
         <p>Se basa en <a href="https://rdflib.dev/">RDFLib</a></p>
-        <p>Otras herramientas posibles: TARQL, OntoRefine, Open Refine, CMEM, Apache 23, etc.</p>
+        <p>Otras herramientas posibles: <a href="https://tarql.github.io/">TARQL</a>, <a href="https://graphdb.ontotext.com/documentation/free/loading-data-using-ontorefine.html">OntoRefine</a>, <a href="https://openrefine.org/">Open Refine</a>, <a href="https://eccenca.com/products/enterprise-knowledge-graph-platform-corporate-memory">Eccenca CMEM</a>, <a href="https://any23.apache.org/">Apache Any23</a>, etc.</p>
     </section>
 
     <section class="slide">
@@ -401,13 +398,14 @@
 
     <section class="slide">
         <h2>Anotar con ontologías</h2>
-        <p>LOV</p>
+        <p><a href="https://lov.linkeddata.es/dataset/lov/vocabs/sio">Semantic Science Integrated Ontology (SIO)</a></p>
+        <p><a href="https://lov.linkeddata.es/dataset/lov/vocabs/uniprot">Uniprot Core Ontology</a></p>
     </section>
 
     <section class="slide">
         <h2>Enlazar</h2>
         <p>A otras URIs</p>
-        <p>Manualmente, o con herramientas como SILK</p>
+        <p>Manualmente, o con herramientas como <a href="http://silkframework.org/">SILK</a></p>
     </section>
 
     <section class="slide">
@@ -420,7 +418,7 @@
 
     <section class="slide">
         <h2>Metadatos</h2>
-        <p><img src="pictures/MetadataGenes.png" alt="MetadataGenes" width="90%" border="1px solid #555"></p>
+        <p><img src="pictures/MetadataGenes.png" alt="MetadataGenes" width="85%" border="1px solid #555"></p>
     </section>
 
     <section class="slide">
@@ -436,31 +434,35 @@
     </section>
 
     <section class="slide">
-        <h2>Blazegraph</h2>
+        <h2>Publicación</h2>
+        <p><p><img src="pictures/LD-FAIR-architecture.png" alt="MetadataGenes" width="90%"></p></p>
+    </section>
+
+    <section class="slide">
+        <h2>Blazegraph (2.1.6 RC)</h2>
         <p>java -server -Xmx4g -jar blazegraph.jar</p>
     </section>
 
     <section class="slide">
         <h2>Blazegraph</h2>
-        <p><img src="pictures/blazegraph-repo-quad.png" alt="Blazegraph repo quad" height="20%" border="1px solid #555"></p>
+        <p><img src="pictures/blazegraph-repo-quad.png" alt="Blazegraph repo quad" width="60%" border="1px solid #555"></p>
     </section>
 
     <section class="slide">
         <h2>Trifid</h2>
-        <p>Configurar Trifid para que haga consultas SPARQL contra http://localhost:9999/blazegraph/namespace/um/sparql</p>
+        <p>Configurar <a href="https://github.com/zazuko/trifid">Trifid</a> para que haga consultas SPARQL contra http://localhost:9999/blazegraph/namespace/um/sparql</p>
         <p><a href="http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321">SPARQL Service Description</a></p>
         <p><a href="https://www.w3.org/TR/sparql11-protocol/">SPARQL Protocol</a></p>
+        <p>Configuración: <a href="../LinkedDataServer/blazegraph-config.json">blazegraph-config.json</a></p>
     </section>
 
     <section class="slide">
         <h2>Trifid</h2>
-        <p>Configurar Trifid para que haga consultas SPARQL contra http://localhost:9999/blazegraph/namespace/um/sparql</p>
-        <p>Configuración: <a href="../LinkedDataServer">blazegraph-config.json</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Trifid</h2>
-        <p>URI um.es vs localhost:8080</p>
+        <p>URIs:
+            <ul>
+                <li>um.es</li>
+                <li>localhost:8080</li>
+                </ul></p>
     </section>
 
     <section class="slide">
@@ -471,6 +473,12 @@
     <section class="slide">
         <h2>Resumen</h2>
         <p>¿Hemos conseguido implementar todos los principios FAIR?</p>
+    </section>
+
+    <section class="slide">
+        <h2>Tareas</h2>
+        <p>Reproducir en local este proceso</p>
+        <p>Entregable: reproducir el proceso con ciertos cambios (<a href="../ENTREGABLE.md">ENTREGABLE.md</a>)</p>
     </section>
 
     <footer class="badge">

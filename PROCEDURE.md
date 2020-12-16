@@ -29,5 +29,3 @@ WHERE {
 `service apache2 restart`
 
 `ln -s /home/mikel/EHU-LSI/Docencia/2020-2021/MSc-UM/MSc-UM-2020-FAIR/LinkedDataServer/data/GenesUM.csv GenesUM.csv`
-
-
