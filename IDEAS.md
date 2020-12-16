@@ -29,20 +29,17 @@ fijarse que en RDF, datos y metadatos juntos
 
 hacer la misma consulta antes y despues de subir metadatos, fijarse en el grafo de genes y explorar (Queries DESCRIBE o tab explore)
 
-Agente: CURL
+Como he deducido la URL http://localhost:9999/blazegraph/namespace/um/sparql? Mirando el network en firefox (Aunque lo mejor seria usar la documentacion). 
 
-Fijarse que el agente, al tener un enalce explicito DCAT, es capaz de saber que hay un CSV al final del enlace!
+Si hago un CURL (CURL http://localhost:9999/blazegraph/namespace/um/sparql), me da contenido siguiendo SPARQL Service Description: es semantico, un agente lo puede usar!
 
+Dominio um.es
 
+Trifid navegador
+Trifid Agente: CURL
 
+Seguir enlaces
 
+Fijarse que el agente, al tener un enlace explicito DCAT, es capaz de saber que hay un CSV al final del enlace!
 
-Trifid: Conneg diferente pero da igual, lo importante es que es para maquinas
-
-Como he deducido la URL http://localhost:9999/blazegraph/namespace/kb/sparql? Mirando el network en firefox (Aunque lo mejor seria usar la documentacion). Si hago un CURL, me da contenido siguiendo SPARQL Service Description (http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321): es semantico, un agente lo puede usar! Comentar tambien SPARQL protocol
-
-https://www.w3.org/TR/sparql11-protocol/
-https://www.w3.org/TR/2013/REC-sparql11-service-description-20130321/
-
-
-Si sobra tiempo, que empiecen a hacer 
+Si sobra tiempo, que empiecen a hacer trabajo:
