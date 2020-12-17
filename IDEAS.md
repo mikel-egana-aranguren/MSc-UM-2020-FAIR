@@ -1,5 +1,9 @@
 # Posibles ideas
 
+## General
+
+* Mirar bien los links, papers, etc
+
 ## Intro
 
 * Explicar quien soy
@@ -8,6 +12,7 @@
 
 ## Contenido
 
+* Estamos usando Linked Data en dos niveles: para datos y metadatos
 * RDFLib: SHACL, TARQL
 * CSV2RDF.py: linea a linea
 * Metadatos: distribuciones, licencia, ... cada triple
