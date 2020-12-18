@@ -23,14 +23,14 @@
         <p>Mikel Egaña Aranguren</p>
         <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
         <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
-        <img src="pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%">
+        <img src="pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
     </section>
 
     <section class="slide" id="cover">
         <h2>Publicación de datos FAIR</h2>
         <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
         <p><a href="https://github.com/mikel-egana-aranguren/MSc-UM-2020-FAIR">https://github.com/mikel-egana-aranguren/MSc-UM-2020-FAIR</a></p>
-        <img src="pictures/by.png" alt="Creative Commons BY" height="10%" border="1px solid #555">
+        <img src="pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
     <section class="slide">
@@ -149,14 +149,17 @@
     </section>
 
     <section class="slide">
-        <h2>F1. (meta)data are assigned a globally unique and persistent identifier</h2>
-        <p>Globally unique: dominios (€), registros, algoritmos (e.g. UUID), etc.</p>
-        <p>Persistent: infraestructura propia (€€€), registros, etc.</p>
+        <h2>F1. (Meta)data are assigned a globally unique and persistent identifier</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Globally unique</h2>
+        <p>Dominios (€), registros, algoritmos (e.g. UUID), etc.</p>
     </section>
 
     <section class="slide">
         <h2>Persistent</h2>
-        <p>Infraestructura propia: por ejemplo <a href="https://www.w3.org/Consortium/Persistence">W3C URI Persistence Policy</a></p>
+        <p>Infraestructura propia (€€€): por ejemplo <a href="https://www.w3.org/Consortium/Persistence">W3C URI Persistence Policy</a></p>
         <p>Registros: <a href="http://identifiers.org">http://identifiers.org</a>, <a href="http://www.doi.org">http://www.doi.org</a>, <a href="https://orcid.org/">https://orcid.org/</a></p>
     </section>
 
@@ -191,20 +194,20 @@
     </section>
 
     <section class="slide">
-        <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
+        <h2>F2. Data are described with rich metadata (defined by R1 below)</h2>
         <p>Añadir metadatos lo más detallados posible</p> 
         <p>Metadatos de contenido: a qué especies pertenecen los genes, la temática de los datos, etc.</p>
         <p>Metadatos técnicos: cuándo se generaron los datos, como, por quién, etc.</p>
     </section>
 
     <section class="slide">
-        <h2>F2. data are described with rich metadata (defined by R1 below)</h2>
+        <h2>F2. Data are described with rich metadata (defined by R1 below)</h2>
         <p>Se usan ontologías (I1)</p> 
         <p>Repositorios de ontologías: <a href="https://lov.linkeddata.es">Linked Open Vocabularies</a>, <a href="http://www.obofoundry.org/">OBO Foundry</a>, <a href="https://bioportal.bioontology.org/">BioPortal</a>, <a href="https://bioschemas.org/">BioSchemas</a>, etc.</p>
     </section>
 
     <section class="slide">
-        <h2>F3. metadata clearly and explicitly include the identifier of the data it describes</h2>
+        <h2>F3. Metadata clearly and explicitly include the identifier of the data it describes</h2>
         <p>"https://um.es/dataset/UMGenesDataset was generated on 2020-12-10T13:00:07"</p> 
         <p>"https://um.es/dataset/UMGenesDataset is about genes"</p>
         <p>"https://um.es/dataset/UMGenesDataset relates to humans"</p>
@@ -212,7 +215,7 @@
     </section>
 
     <section class="slide">
-        <h2>F4. (meta)data are registered or indexed in a searchable resource</h2>  
+        <h2>F4. (Meta)data are registered or indexed in a searchable resource</h2>  
         <p>Repositorios generales: <a href="https://zenodo.org/">Zenodo</a>, <a href="https://datadryad.org/">DataDryad</a>, <a href="https://dataverse.org/">Dataverse</a> (<a href="https://dataverse.harvard.edu/">Harvard Dataverse</a>), etc.</p> 
         <p>Repositorios temáticos: <a href="https://www.uniprot.org/">UniProt</a>, <a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a>, etc.</p>
         <p>Indexadores como Google</p>
@@ -232,24 +235,24 @@
     </section>
 
     <section class="slide">
-        <h2>A1. (meta)data are retrievable by their identifier using a standardized communications protocol</h2>
+        <h2>A1. (Meta)data are retrievable by their identifier using a standardized communications protocol</h2>
         <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
-        <h2>A1.1 the protocol is open, free, and universally implementable</h2>
+        <h2>A1.1 The protocol is open, free, and universally implementable</h2>
         <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
-        <h2>A1.2 the protocol allows for an authentication and authorization procedure, where necessary</h2>
+        <h2>A1.2 The protocol allows for an authentication and authorization procedure, where necessary</h2>
         <p>Hacer explícitas las condiciones físicas de acceso, para humanos y <b>máquinas</b></p>
         <p>Datos protegidos por propiedad intelectual o privacidad (Ej. datos clínicos): no se publican los datos, sólo (algunos) metadatos y sus condiciones de acceso</p>
         <p>Por ejemplo HTTPS</p>
     </section>
 
     <section class="slide">
-        <h2>A2. metadata are accessible, even when the data are no longer available</h2>
+        <h2>A2. Metadata are accessible, even when the data are no longer available</h2>
         <p>Conservar datos es muy caro</p>
         <p>Conservar metadatos es mucho más barato</p>
         <p>Si los datos ya no existen, deberíamos ser explícitos sobre ello, por ejemplo para evitar búsquedas innecesarias</p>
@@ -261,18 +264,18 @@
     </section>
 
     <section class="slide">
-        <h2>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</h2>
+        <h2>I1. (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</h2>
         <p>Las máquinas también tienen que <i>entender</i> los (meta)datos</p>
         <p>Por ejemplo OWL (<a href="https://www.w3.org/TR/owl2-overview/">Web Ontology Language</a>)</p>
     </section>
 
     <section class="slide">
-        <h2>I2. (meta)data use vocabularies that follow FAIR principles</h2>
+        <h2>I2. (Meta)data use vocabularies that follow FAIR principles</h2>
         <p>Las ontologías usadas para describir los datos también se tienen que publicar como FAIR</p>
     </section>
 
     <section class="slide">
-        <h2>I3. (meta)data include qualified references to other (meta)data</h2>
+        <h2>I3. (Meta)data include qualified references to other (meta)data</h2>
         <p>Los (meta)datos son solo útiles cuando los integramos con otros datos</p>
         <p>Enlaces explícitos a otros datos: "part-of", "catalyses", etc.</p>
         <p>Las máquinas entienden el significado de esa relación</p>
@@ -284,19 +287,19 @@
     </section>
 
     <section class="slide">
-        <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
-            <p>R1.1. (meta)data are released with a clear and accessible data usage license</p>
-            <p>R1.2. (meta)data are associated with detailed provenance</p>
-            <p>R1.3. (meta)data meet domain-relevant community standards</p>
+        <h2>R1. Meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
+            <p>R1.1. (Meta)data are released with a clear and accessible data usage license</p>
+            <p>R1.2. (Meta)data are associated with detailed provenance</p>
+            <p>R1.3. (Meta)data meet domain-relevant community standards</p>
     </section>
 
     <section class="slide">
-        <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
+        <h2>R1. Meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
             <p>F2 es para descubrir datos, R1 es para decidir si los datos son útiles</p>
     </section>
 
     <section class="slide">
-        <h2>R1. meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
+        <h2>R1. Meta(data) are richly described with a plurality of accurate and relevant attributes</h2>
         Describe the scope of your data: for what purpose was it generated/collected?
         Mention any particularities or limitations about the data that other users should be aware of.
         Specify the date of generation/collection of the data, the lab conditions, who prepared the data, the parameter settings, the name and version of the software used.
@@ -306,22 +309,22 @@
     </section>
 
     <section class="slide">
-        <h2>R1.1. (meta)data are released with a clear and accessible data usage license</h2>
+        <h2>R1.1. (Meta)data are released with a clear and accessible data usage license</h2>
         <p>I es sobre interoperabilidad tecnica; R1.1 es sobre interoperabilidad legal</p>
-        <p>Los datos deben tener una licencia clara y explícita para humanos y maquinas</p>
+        <p>Los datos deben tener una licencia clara y explícita para humanos y máquinas</p>
         <p>Por ejemplo, <a href="https://github.com/creativecommons/cc.licenserdf">Creative Commons RDF</a></p>
     </section>
 
     <section class="slide">
-        <h2>R1.2. (meta)data are associated with detailed provenance</h2>
+        <h2>R1.2. (Meta)data are associated with detailed provenance</h2>
         <p>¿Cómo, quién, cuándo, por qué generó los datos?</p>
         <p><a href="https://www.w3.org/TR/prov-o/">PROV-O: The PROV Ontology</a></p>
     </section>
 
     <section class="slide">
-        <h2>R1.3. (meta)data meet domain-relevant community standards</h2>
+        <h2>R1.3. (Meta)data meet domain-relevant community standards</h2>
         <p>Respetar las buenas prácticas, estándares, vocabularios etc. de la comunidad científica que trabaja con esos datos</p>
-        <p><a href="http://fged.org/projects/minseqe/">Minimum Information about a high-throughput SEQuencing Experiment</a></p>
+        <p>Por ejemplo <a href="http://fged.org/projects/minseqe/">Minimum Information about a high-throughput SEQuencing Experiment</a></p>
     </section>
 
     <section class="slide">
@@ -341,13 +344,9 @@
     </section>
 
     <section class="slide">
-        <h2>Proyectos</h2>
-        <p><a href="https://pht.health-ri.nl/">Personal Health Train Network</a></p>
-        <p><a href="../papers/1812.00991.pdf">1812.00991.pdf</a></p>
-    </section>
+        <h2>Proyectos, Empresas, y centros</h2>
+        <p><a href="https://pht.health-ri.nl/">Personal Health Train Network (<a href="../papers/1812.00991.pdf">1812.00991.pdf</a>)</p>
 
-    <section class="slide">
-        <h2>Empresas y centros</h2>
             <p><a href="http://www.fairdata.systems/">FAIR Data Systems</a></p>
             <p><a href="https://thehyve.nl/">The Hyve</a></p>
             <p><a href="https://eccenca.com/">Eccenca GmbH</a></p>
@@ -358,6 +357,7 @@
         <h2>Recursos sobre FAIR en internet</h2>
         <p><a href="https://www.go-fair.org/fair-principles/">GO FAIR</a></p>
         <p><a href="https://fairsharing.org/">FAIR Sharing</a></p>
+        <p><a href="https://fair-dom.org/">FAIR-DOM</a></p>
     </section>
 
     <section class="slide">
@@ -483,6 +483,7 @@
     <section class="slide">
         <h2>Resumen</h2>
         <p>¿Hemos conseguido implementar todos los principios FAIR?</p>
+        <p>¿En qué medida?</p>
     </section>
 
     <section class="slide">

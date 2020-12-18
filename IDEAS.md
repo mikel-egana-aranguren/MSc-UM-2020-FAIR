@@ -7,11 +7,12 @@
 ## Intro
 
 * Explicar quien soy
+* Explicar como encontrar el material
 * Explicar bien todo lo que tienen en el repo GitHub: papers etc
-* Vamos a dar ejemplos concretos de implementacion, pero recordar siempre que FAIR no es sobre implementacion! desgranar ambas facetas
 
 ## Contenido
 
+* FAIR es sobre datos y metadatos: (meta)data
 * Estamos usando Linked Data en dos niveles: para datos y metadatos
 * RDFLib: SHACL, TARQL
 * CSV2RDF.py: linea a linea
